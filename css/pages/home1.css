@@ -1,0 +1,38 @@
+.home-hero{
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.home-hero__cards{
+  display: grid;
+  grid-template-columns: repeat(4 , auto);
+  gap: 30px;
+}
+
+@media (max-width:900px) {
+  .home-hero__cards{
+    grid-template-columns: repeat(3 , auto);
+  }
+}
+
+@media (max-width:600px) {
+  .home-hero__cards{
+    grid-template-columns: repeat(2 , auto);
+  }
+}
+
+@media (max-width:900px) {
+  .home-hero__cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.home-hero__card{
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+  background-color: red;
+  color: white;
+}
